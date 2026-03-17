@@ -21,8 +21,8 @@ const io=new Server(server,{
    cors:{
    
   
-  'https://vingo-l7iv.onrender.com' // Production frontend
-    credentials:true,
+  origin: "https://vingo-l7iv.onrender.com",
+  credentials: true
     methods:['POST','GET']
 }
 })
