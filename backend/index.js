@@ -20,7 +20,7 @@ const server=http.createServer(app)
 const io=new Server(server,{
    cors:{
    
-  'https://vingo-backend-fpoy.onrender.com',        // Local backend dev (if applicable)
+  
   'https://vingo-l7iv.onrender.com' // Production frontend
     credentials:true,
     methods:['POST','GET']
