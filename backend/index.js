@@ -21,9 +21,9 @@ const io=new Server(server,{
    cors:{
    
   
-  origin: "https://vingo-l7iv.onrender.com",
-  credentials: true
-    methods:['POST','GET']
+ origin: "https://vingo-l7iv.onrender.com",
+  credentials: true,
+  methods: ['POST','GET']
 }
 })
 
