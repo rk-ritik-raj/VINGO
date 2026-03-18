@@ -21,9 +21,9 @@ const io=new Server(server,{
    cors:{
    
   
- "https://vingo-l7iv.onrender.com",
-"https://vingo-backend-fpoy.onrender.com"
-  credentials: true,
+ origin:"https://vingo-l7iv.onrender.com",
+
+  credentials: false,
   methods: ['POST','GET']
 }
 })
@@ -35,8 +35,8 @@ app.set("io",io)
 const port=process.env.PORT || 5000
 app.use(cors({
  
-   origin:"https://vingo-l7iv.onrender.com"
-    credentials:false
+   origin:"https://vingo-l7iv.onrender.com",
+    credentials:false,
 }))
 app.use(express.json())
 app.use(cookieParser())
