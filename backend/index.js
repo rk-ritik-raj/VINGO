@@ -22,8 +22,7 @@ const io=new Server(server,{
    
   
  origin:"https://vingo-l7iv.onrender.com",
-
-  credentials: true,
+   credentials:true
   methods: ['POST','GET']
 }
 })
@@ -36,6 +35,7 @@ const port=process.env.PORT || 5000
 app.use(cors({
  
    origin:"https://vingo-l7iv.onrender.com",
+   
     credentials:true,
 }))
 app.use(express.json())
